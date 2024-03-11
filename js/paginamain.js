@@ -11,6 +11,11 @@ const formAsignaturasInput = document.getElementById('formAsignaturas')
 const formMatriculasInput = document.getElementById('formMatriculas')
 const pagReportesInput = document.getElementById('pagReportes')
 const formHorariosInput = document.getElementById('formHorarios')
+const listaEstudiantesInput = document.getElementById('listaEstudiantes')
+const listaProfesoresInput = document.getElementById('listaProfesores')
+
+
+
 
 
 
@@ -29,6 +34,8 @@ const paginaPrincipal=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
 
     cargarMatriculasTabla()
 }
@@ -48,6 +55,9 @@ const paginaDepartamentos=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
     
 
     cargarDepartamentosTabla()
@@ -67,6 +77,9 @@ const paginaProgramas=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarProgramasTabla()
 }
@@ -85,6 +98,9 @@ const paginaPeriodos=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarPeriodosTabla()
 }
@@ -103,6 +119,9 @@ const paginaCursos=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarCursosTabla()
 }
@@ -121,6 +140,9 @@ const paginaTarifas=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarTarifasTabla()
 }
@@ -140,6 +162,9 @@ const paginaSalones=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarSalonesTabla()
 }
@@ -159,6 +184,9 @@ const formAlumnos=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarProgramasAlum()
 }
@@ -179,6 +207,9 @@ const formDocentes=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarDepartamentos()
     
@@ -199,10 +230,13 @@ const formAsignaturas=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarProgramas()
     cargarCursos()
-    cargarProfesores()
+    cargarProfesoresp()
     agregarHorario()
     agregarHorario()
 }
@@ -223,8 +257,11 @@ const formMatriculas=()=>{
     formMatriculasInput.style.display="block";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
-    cargarEstudiantes()
+    cargarEstudiantesp()
     cargarAsignaturas()
     cargarPeriodos()
 }
@@ -244,6 +281,9 @@ const paginaReportes=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="block";
     formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarReportesTabla()
 
@@ -264,9 +304,81 @@ const formHorarios=()=>{
     formMatriculasInput.style.display="none";
     pagReportesInput.style.display="none";
     formHorariosInput.style.display="block";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    
 
     cargarEstudiantesR()
     
 }
 
+const listaEstudiantes=()=>{
+    homeInput.style.display="none";
+    pagDepartamentosInput.style.display="none";
+    pagPeriodosInput.style.display="none";
+    pagProgramasInput.style.display="none";
+    pagTarifasInput.style.display="none";
+    pagCursosInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formAlumnosInput.style.display="none";
+    formDocentesInput.style.display="none";
+    formAsignaturasInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formMatriculasInput.style.display="none";
+    pagReportesInput.style.display="none";
+    formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="block";
+    listaProfesoresInput.style.display="none";
+    
+
+    cargarEstudiantes()
+
+}
+
+
+const listaProfesores=()=>{
+    homeInput.style.display="none";
+    pagDepartamentosInput.style.display="none";
+    pagPeriodosInput.style.display="none";
+    pagProgramasInput.style.display="none";
+    pagTarifasInput.style.display="none";
+    pagCursosInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formAlumnosInput.style.display="none";
+    formDocentesInput.style.display="none";
+    formAsignaturasInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formMatriculasInput.style.display="none";
+    pagReportesInput.style.display="none";
+    formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="block";
+    
+
+    cargarProfesores()
+
+}
+
+const tablaAsignaturas=()=>{
+    homeInput.style.display="none";
+    pagDepartamentosInput.style.display="none";
+    pagPeriodosInput.style.display="none";
+    pagProgramasInput.style.display="none";
+    pagTarifasInput.style.display="none";
+    pagCursosInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formAlumnosInput.style.display="none";
+    formDocentesInput.style.display="none";
+    formAsignaturasInput.style.display="none";
+    pagSalonesInput.style.display="none";
+    formMatriculasInput.style.display="none";
+    pagReportesInput.style.display="none";
+    formHorariosInput.style.display="none";
+    listaEstudiantesInput.style.display="none";
+    listaProfesoresInput.style.display="none";
+    tablaAsignaturasInput.style.display="block";
+
+    cargarProfesores()
+
+}
 

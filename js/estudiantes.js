@@ -117,3 +117,26 @@ const cargarProgramasAlum=()=>{
 
 
 }
+
+const cargarEstudiantes=()=>{
+    const estudianteInput=document.getElementById("tablaEstudiantes");
+    let datos = '';
+    for ( const estudiante of listaAlumnos){
+        datos+=`<tr>
+
+        <td>${estudiante.id}</td>
+        <td>${estudiante.nombre}</td>
+        <td>${estudiante.apellido}</td>
+        <td>${estudiante.tipo_documento}</td>
+        <td>${estudiante.numero_documento}</td>
+        <td>${estudiante.telefono}</td>
+
+
+        </tr>`
+    }
+    console.log(datos)
+
+    estudianteInput.innerHTML=datos;
+
+
+}

@@ -25,7 +25,7 @@ const loadMatriculas= async()=>{
 
 
 
-const cargarEstudiantes=()=>{
+const cargarEstudiantesp=()=>{
     const estudianteInput=document.getElementById("estudiante");
     let datos = '';
     for ( const alumno of listaAlumnos){

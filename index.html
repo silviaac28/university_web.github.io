@@ -28,6 +28,9 @@
                 <li><a onclick="paginaTarifas()">Tarifas</a></li>
                 <li><a onclick="paginaCursos()">Cursos</a></li>
                 <li><a onclick="paginaSalones()">Salones</a></li>
+                <li><a onclick="listaEstudiantes()">Lista Estudiantes</a></li>
+                <li><a onclick="listaProfesores()">Lista Profesores</a></li>
+        
               </ul>
               </li> 
             <li><a onclick="formAlumnos()">Alumnos</a></li>
@@ -185,7 +188,53 @@
     <div id="pagMatriculas">
           
         </div>
+
+
+      <!-- TABLA LISTA ESTUDIANTES -->
+
+<div id="listaEstudiantes">
+  <div class="titulo-tabla"><h2>ESTUDIANTES</h2></div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Tipo de Documento</th>
+          <th scope="col">Nùmero de Documento</th>
+          <th scope="col">Telèfono</th>
+        </tr>
+      </thead>
+      <tbody id="tablaEstudiantes">
+       
+      </tbody>
+  </table>
+  </div>
       
+
+        <!-- TABLA LISTA PROFESORES -->
+
+<div id="listaProfesores">
+  <div class="titulo-tabla"><h2>PROFESORES</h2></div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Tipo de Documento</th>
+          <th scope="col">Nùmero de Documento</th>
+          <th scope="col">Departamento ID</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProfesores">
+       
+      </tbody>
+  </table>
+  </div>
+
+
+  
 <!----------- FORMULARIO ALUMNOS  ------------>
 <div id="formAlumnos">
   <div class="imagen-fondo">

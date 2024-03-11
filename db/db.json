@@ -369,6 +369,30 @@
       "nombre": "Javier",
       "apellido": "Lopez",
       "departamento_id": 2
+    },
+    {
+      "id": "21",
+      "nombre": "Sebastian",
+      "apellido": "Nunez",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "1045979797",
+      "departamento_id": 3
+    },
+    {
+      "id": 22,
+      "nombre": " Joan",
+      "apellido": "Serrano",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "1097797979",
+      "departamento_id": 4
+    },
+    {
+      "id": 23,
+      "nombre": "Juliana",
+      "apellido": "Gutierrez",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "13131313",
+      "departamento_id": 4
     }
   ],
   "alumnos": [
@@ -774,6 +798,45 @@
       "fecha_nacimiento": "2015-07-05",
       "sexo": "Masculino",
       "programa_id": 4
+    },
+    {
+      "id": "32",
+      "nombre": "Patricia",
+      "apellido": "Gonzales",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "1025879",
+      "ciudad_residencia": "Cucuta",
+      "direccion": "Cra 20 98-75",
+      "telefono": "31254788",
+      "fecha_nacimiento": "2005-01-01",
+      "sexo": "Femenino",
+      "programa_id": 9
+    },
+    {
+      "id": 33,
+      "nombre": "Carla",
+      "apellido": "Giraldo",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "1851515",
+      "ciudad_residencia": "Medellin",
+      "direccion": "Cra 25 96-98",
+      "telefono": "315749797",
+      "fecha_nacimiento": "2006-04-11",
+      "sexo": "Femenino",
+      "programa_id": 10
+    },
+    {
+      "id": 34,
+      "nombre": "Sebastian",
+      "apellido": "Gutierrez",
+      "tipo_documento": "Cédula de Ciudadania",
+      "numero_documento": "1049494",
+      "ciudad_residencia": "Medellin",
+      "direccion": "Cra 80 45",
+      "telefono": "46464646",
+      "fecha_nacimiento": "2021-07-11",
+      "sexo": "Masculino",
+      "programa_id": 9
     }
   ],
   "cursos": [
@@ -1207,6 +1270,52 @@
           "salon_id": 7
         }
       ]
+    },
+    {
+      "id": 11,
+      "curso_id": 1,
+      "codigo": "PRO-CFW-24",
+      "creditos": 2,
+      "profesor_id": 14,
+      "cupos_disponibles": 20,
+      "programa_id": 1,
+      "horario_clases": [
+        {
+          "dia": "viernes",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": 4
+        },
+        {
+          "dia": "lunes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": 10
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "curso_id": 4,
+      "codigo": "DER-OP-24",
+      "creditos": 4,
+      "profesor_id": 7,
+      "cupos_disponibles": 20,
+      "programa_id": 5,
+      "horario_clases": [
+        {
+          "dia": "miercoles",
+          "hora_inicio": "2:00 pm",
+          "hora_fin": "4:00 pm",
+          "salon_id": 11
+        },
+        {
+          "dia": "martes",
+          "hora_inicio": "6:00 am",
+          "hora_fin": "8:00 am",
+          "salon_id": 5
+        }
+      ]
     }
   ],
   "matriculas": [
@@ -1307,13 +1416,51 @@
       "precio": 9800
     },
     {
-      "id": 11,
+      "id": "11",
       "estudiante_id": 17,
       "asignatura_id": [
         "8"
       ],
       "periodo_id": 1,
       "precio": 6750
+    },
+    {
+      "id": "12",
+      "estudiante_id": 9,
+      "asignatura_id": [
+        "1"
+      ],
+      "periodo_id": 2,
+      "precio": 4400
+    },
+    {
+      "id": 13,
+      "estudiante_id": 32,
+      "asignatura_id": [
+        "10",
+        "8"
+      ],
+      "periodo_id": 2,
+      "precio": 13250
+    },
+    {
+      "id": 14,
+      "estudiante_id": 34,
+      "asignatura_id": [
+        "6",
+        "10"
+      ],
+      "periodo_id": 1,
+      "precio": 9550
+    },
+    {
+      "id": 15,
+      "estudiante_id": 12,
+      "asignatura_id": [
+        "5"
+      ],
+      "periodo_id": 1,
+      "precio": 6000
     }
   ]
 }

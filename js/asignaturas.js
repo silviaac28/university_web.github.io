@@ -206,7 +206,7 @@ const cargarCursos=()=>{
     cursoInput.innerHTML=datos;
 }
 
-const cargarProfesores=()=>{
+const cargarProfesoresp=()=>{
     const profesorInput=document.getElementById("profesor");
     let datos = '';
     for ( const profesor of listaDocentes){
@@ -227,3 +227,4 @@ const cargarSalones = (salonId) => {
     }
     salonInput.innerHTML = datos;
 };
+

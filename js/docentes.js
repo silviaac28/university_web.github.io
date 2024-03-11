@@ -99,3 +99,26 @@ const cargarDepartamentos=()=>{
 
 
 }
+
+const cargarProfesores=()=>{
+    const profesorInput=document.getElementById("tablaProfesores");
+    let datos = '';
+    for ( const profesor of listaDocentes){
+        datos+=`<tr>
+
+        <td>${profesor.id}</td>
+        <td>${profesor.nombre}</td>
+        <td>${profesor.apellido}</td>
+        <td>${profesor.tipo_documento}</td>
+        <td>${profesor.numero_documento}</td>
+        <td>${profesor.departamento_id}</td>
+
+
+        </tr>`
+    }
+    console.log(datos)
+
+    profesorInput.innerHTML=datos;
+
+
+}
