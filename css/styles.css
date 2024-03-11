@@ -1,0 +1,189 @@
+/* NAV BARRRRRRR*/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #desp{
+    height: 10vh;
+  }
+
+.navbar  {
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+}
+
+.navbar-navbar-inverse{
+  background-color: rgba(0, 0, 0, 0.886);
+}
+
+.navbar-navbar-inverse li a{
+  color: rgb(146, 143, 171);
+}
+
+
+/* HOME */
+#home {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  background-image: url('unif.png');
+  color: black;
+}
+
+#about-us{
+  background-color: rgba(16, 25, 33, 0.751);
+  /* background-color: rgba(0, 0, 0, 0.7); Fondo negro con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 35vw;
+  margin-left: 70vw;
+  margin-top: 0vh;
+  height: 100vh;
+  text-align: center;
+
+}
+
+.about-us .container4 {
+  background-color: transparent; 
+  color: black;/* Fondo transparente para que se muestre el color de fondo del div padre */
+}
+
+
+.circulos img{
+  margin-bottom: 5vh;
+  width:11vw;
+  height: 21vh;
+  border-radius: 50%; /* Hace que la imagen sea totalmente redondeada */
+  border: 2px solid white;
+}
+
+.container4 h4{
+  color: rgba(240, 248, 255, 0.637);
+}
+
+
+/* TABLAS */
+.titulo-tabla{
+  text-align: center;
+}
+
+table{
+  background-color: aquamarine;
+}
+
+
+/* FORMULARIOS */
+
+ /*DISENO FORMULARIO ALUMNOS */
+
+ #formAlumnos{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  background-image: url('unif.png');
+  color: black;
+}
+
+/*DISENO FORMULARIO DOCENTES */
+
+#formDocentes{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  background-image: url('unif.png');
+  color: black;
+  height: 100vh;
+}
+
+#formDocentes button{
+  margin-top: 5vh;
+}
+
+/*DISENO FORMULARIO ASIGNATURAS */
+#formAsignaturas{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  background-image: url('unif.png');
+  color: black;
+}
+
+#formAsignaturas button{
+  margin-top: 5vh;
+}
+
+/*DISENO FORMULARIO MATRICULAS */
+#formMatriculas{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  background-image: url('unif.png');
+  color: black;
+}
+
+#formMatriculas button{
+  margin-top: 5vh;
+}
+
+
+/*DISENO FORMULARIO MATRICULAS */
+#formHorarios{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  background-image: url('unif.png');
+  color: black;
+}
+
+#formHorarios button{
+  margin-top: 5vh;
+}
+
+#horariosR h2{
+  font-size: 2vh;
+}
+
+
+.imagen-fondo {
+  background-color: aliceblue;
+  /* background-color: rgba(0, 0, 0, 0.7); Fondo negro con transparencia */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 45vw;
+  margin-left: 30vw;
+  margin-top: 0vh;
+  height: 100vh;
+}
+
+.imagen-fondo .container4 {
+  background-color: transparent; 
+  color: black;/* Fondo transparente para que se muestre el color de fondo del div padre */
+}
+
+.imagen-fondo .pf {
+  color: white; /* Texto blanco para que sea visible sobre el fondo oscuro */
+}
+
+
+
+
+
+
+/*PRUEBASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+
+
+

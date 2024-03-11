@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- BARRA NAVVVVVV -->
+    <nav class="navbar-navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Sabios's University</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a onclick="paginaPrincipal()">Home</a></li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Oferta acádemica<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a onclick="paginaDepartamentos()">Departamentos</a></li>
+                <li><a onclick="paginaProgramas()">Programas</a></li>
+                <li><a onclick="paginaPeriodos()">Periodos</a></li>
+
+                <li><a onclick="paginaTarifas()">Tarifas</a></li>
+                <li><a onclick="paginaCursos()">Cursos</a></li>
+                <li><a onclick="paginaSalones()">Salones</a></li>
+              </ul>
+              </li> 
+            <li><a onclick="formAlumnos()">Alumnos</a></li>
+            <li><a onclick="formDocentes()">Docentes</a></li>
+            <li><a onclick="formAsignaturas()">Asignaturas</a></li>
+            <li><a onclick="formMatriculas()">Matriculas</a></li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Reportes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a onclick="paginaReportes()">Matriculas recaudadas</a></li>
+                <li><a onclick="formHorarios()">Horarios estudiantes</a></li>
+              </ul>
+            </li> 
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div id="home">
+            <div id="about-us">
+              <div class="container4">
+                <div class="circulos">
+                  <h4>Nuestras Sedes</h4>
+                  <img src="css/op.jpg" alt="">
+                </div>
+                <div class="circulos">
+                  <h4>Investigación</h4>
+                  <img src="css/invest.jpg" alt="">
+                </div>
+                <div class="circulos">
+                  <h4>Proyección Social</h4>
+                  <img src="css/com.jpg" alt="">
+                </div>
+              </div>
+            </div>
+      </div>
+
+
+    <!-- TABLA PERIODOS -->
+<div id="pagPeriodos">
+  <div class="titulo-tabla"><h2>PERIODOS ACÁDEMICOS</h2></div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Código del periodo</th>
+          <th scope="col">Año</th>
+          <th scope="col">Semestre</th>
+        </tr>
+      </thead>
+      <tbody id="tablaPeriodos">
+       
+      </tbody>
+  </table>
+</div>
+
+    <!-- TABLA DEPARTAMENTOS  -->
+<div id="pagDepartamentos">
+  <div class="titulo-tabla"><h2>DEPARTAMENTOS</h2></div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre del Departamento</th>
+        </tr>
+      </thead>
+      <tbody id="tablaDeptos">
+       
+      </tbody>
+  </table>
+</div>
+
+  <!-- TABLA PROGRAMAS  -->
+
+<div id="pagProgramas">
+  <div class="titulo-tabla"><h2>PROGRAMAS</h2></div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre del Programa</th>
+          <th scope="col">Nombre del Nivel</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProgramas">
+       
+      </tbody>
+  </table>
+  </div>
+
+    <!-- TABLA TARIFAS  -->
+  <div id="pagTarifas">
+    <div class="titulo-tabla"><h2>TARIFAS</h2></div>
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Costo crédito</th>
+            <th scope="col">ID del periodo</th>
+            <th scope="col">ID del programa</th>
+          </tr>
+        </thead>
+        <tbody id="tablaTarifas">
+  
+        </tbody>
+    </table>
+  </div>
+
+      <!-- TABLA CURSOS  -->
+
+  <div id="pagCursos">
+    <div class="titulo-tabla"><h2>CURSOS</h2></div>
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre del curso</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Guia cátedra</th>
+          </tr>
+        </thead>
+        <tbody id="tablaCursos">
+  
+        </tbody>
+    </table>
+  </div>
+
+
+    <!-- TABLA SALONES  -->
+
+    <div id="pagSalones">
+      <div class="titulo-tabla"><h2>SALONES</h2></div>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Capacidad</th>
+                  <th scope="col">Edificio</th>
+                  <th scope="col">Piso</th>
+                  <th scope="col">Número de identificación</th>
+                </tr>
+              </thead>
+              <tbody id="tablaSalones">
+        
+              </tbody>
+          </table>
+    </div>
+
+      <!-- TABLA MATRICULAS  -->
+
+    <div id="pagMatriculas">
+          
+        </div>
+      
+<!----------- FORMULARIO ALUMNOS  ------------>
+<div id="formAlumnos">
+  <div class="imagen-fondo">
+    <div class="container4">
+      <h2>INSCRIPCIÓN DE ALUMNOS</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <div class="card px-5 pt-4 d-flex justify-content-center">
+          <form class="mydetails">
+            <div class="form-group"><input type="text" class="form-control" id="nombreAlum" required><label class="form-control-placeholder" for="nombreAlum">Nombre</label></div>
+  
+            <div class="form-group"><input type="text" class="form-control" id="apellidoAlum" required><label class="form-control-placeholder" for="apellidoAlum">Apellido</label></div>
+  
+            <div class="mb-3">
+  
+              <label for="tipoid" class="form-label">Tipo de Identificación</label>
+  
+              <select id="tipoid" class="form-select">
+  
+                <option>Cédula de Ciudadania</option>
+                <option>Cédula de Extranjeria</option>
+                <option>Número de Pasaporte</option>
+                <option>Tarjeta de Identidad</option>
+              </select>
+            </div>
+              
+            <div class="form-group"><input type="text" class="form-control" id="numdocumento" required><label class="form-control-placeholder" for="numdocumento">Número de Documento</label></div>
+    
+            <div class="form-group"><input type="text" class="form-control" id="ciudad" required><label class="form-control-placeholder" for="ciudad">Ciudad de Residencia</label></div>
+  
+            <div class="form-group"><input type="text" class="form-control" id="direccion" required><label class="form-control-placeholder" for="direccion">Dirección</label></div>
+  
+            <div class="form-group"><input type="number" class="form-control" id="telefono" required><label class="form-control-placeholder" for="telefono">Teléfono</label></div>
+  
+            <div class="form-group"><input type="date" class="form-control" id="fechaNacim" required><label class="form-control-placeholder" for="fechaNacim">Fecha de nacimiento</label></div>
+  
+            <div class="mb-3">
+  
+              <label for="genero" class="form-label">Género</label>
+  
+              <select id="genero" class="form-select">
+  
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="idprogram" class="form-label">ID del programa</label>
+  
+              <select id="idprogram" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="submitAlumno()">Submit</button></div>
+            </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  </div>
+ 
+
+</div>
+  
+
+<!----------- FORMULARIO DOCENTES  ------------>
+<div id="formDocentes">
+  <div class="imagen-fondo">
+    <div class="container4">
+      <h2>INSCRIPCIÓN DE DOCENTES</h2>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <div class="card px-5 pt-4 d-flex justify-content-center">
+          <form class="mydetails">
+            <div class="form-group"><input type="text" class="form-control" id="nombreDocente" required><label class="form-control-placeholder" for="nombreDocente">Nombre</label></div>
+  
+            <div class="form-group"><input type="text" class="form-control" id="apellidoDocente" required><label class="form-control-placeholder" for="apellidoDocente">Apellido</label></div>
+  
+            <div class="mb-3">
+  
+              <label for="tipoid_doc" class="form-label">Tipo de Identificación</label>
+  
+              <select id="tipoid_doc" class="form-select">
+  
+                <option>Cédula de Ciudadania</option>
+                <option>Cédula de Extranjeria</option>
+                <option>Número de Pasaporte</option>
+                <option>Tarjeta de Identidad</option>
+              </select>
+            </div>
+              
+            <div class="form-group"><input type="text" class="form-control" id="doc_docente" required><label class="form-control-placeholder" for="doc_docente">Número de Documento</label></div>
+  
+            <div class="mb-3">
+  
+              <label for="dep_id" class="form-label">ID del programa</label>
+  
+              <select id="dep_id" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="submitDocente()">Submit</button></div>
+            </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+  
+
+</div>
+
+<!----------- FORMULARIO ASIGNATURAS  ------------>
+<div id="formAsignaturas">
+  <div class="imagen-fondo">
+    <div class="container4">
+      <h2>INSCRIPCIÓN ASIGNATURAS</h2>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <div class="card px-5 pt-4 d-flex justify-content-center">
+          <form class="mydetails">
+  
+            <div class="mb-3">
+  
+              <label for="programa" class="form-label">Programa</label>
+  
+              <select id="programa" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="curso" class="form-label">Curso</label>
+  
+              <select id="curso" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="form-group"><input type="text" class="form-control" id="codigo" required><label class="form-control-placeholder" for="codigo">Código</label></div>
+  
+            <div class="form-group"><input type="number" class="form-control" id="creditos" required><label class="form-control-placeholder" for="creditos">Créditos</label></div>
+  
+            <div class="mb-3">
+  
+              <label for="profesor" class="form-label">Profesor</label>
+  
+              <select id="profesor" class="form-select">
+  
+              </select>
+            </div>
+              
+            <div class="form-group"><input type="number" class="form-control" id="cupos" required><label class="form-control-placeholder" for="cupos">Cupos Disponibles</label></div>
+  
+            <div class="mb-3" id="horarios-container">
+  
+  
+  
+      
+            </div>
+  
+  
+            <!-- <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="agregarHorario()">Agregar horarios de clase</button></div> -->
+  
+  
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="submitAsignaturas()">Submit</button></div>
+            </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+
+</div>
+
+
+<!----------- FORMULARIO MATRICULAS  -------------->
+<div id="formMatriculas">
+  <div class="imagen-fondo">
+    <div class="container4">
+      <h2>INSCRIPCIÓN GESTION DE MATRICULAS</h2>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <div class="card px-5 pt-4 d-flex justify-content-center">
+          <form class="mydetails">
+  
+            <div class="mb-3">
+  
+              <label for="estudiante" class="form-label">Estudiante</label>
+  
+              <select id="estudiante" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="asignatura" class="form-label">Asignatura</label>
+  
+              <select id="asignatura" class="form-select">
+  
+              </select>
+            </div>
+  
+        
+            <div class="mb-3">
+  
+              <label for="periodo" class="form-label">Periodo</label>
+  
+              <select id="periodo" class="form-select">
+  
+              </select>
+            </div>
+  
+  
+            <div id="matricula-container">
+              <table class="table table-striped">
+                <thead>
+                    <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Periodo</th>
+                          <th scope="col">Créditos</th>
+                          <th scope="col">Costo Créditos</th>
+                        </tr>
+                      </thead>
+                      <tbody id="tablaMatriculas">
+                
+                      </tbody>
+                  </table>
+            </div>
+  
+            <p id="totalCreditos">Costo total de créditos:</p>
+  
+  
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="agregarMatricula()">Agregar matricula</button></div>
+  
+  
+            <div class="col-md-6"><button type="button" class="btn btn-primary btn-block" onclick="submitMatriculas()">Confirmar matricula</button></div>
+  
+          
+            </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+
+</div>
+
+
+<!----------- REPORTES  -------------->
+
+<div id="pagReportes">
+  <div class="container5">
+    <div class="titulo-tabla"><h2>RECAUDACION MATRICULAS</h2></div>
+  </div>
+
+  <div id="recaudos-container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+                <th scope="col">PERIODO</th>
+                <th scope="col">Total recaudado en matriculas</th>
+                <th scope="col">Asignatura más matriculada</th>
+              </tr>
+            </thead>
+            <tbody id="tablaRecaudos">
+      
+            </tbody>
+        </table>
+  </div>
+
+</div>
+
+<!----------- HORARIO ESTUDIANTES  -------------->
+
+<div id="formHorarios">
+  <div class="imagen-fondo">
+    <div class="container6">
+      <div class="titulo-tabla"><h2>HORARIOS ESTUDIANTES</h2></div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <div class="card px-5 pt-4 d-flex justify-content-center">
+          <form class="mydetails">
+  
+            <div class="mb-3">
+  
+              <label for="estudianteH" class="form-label">Estudiante</label>
+  
+              <select id="estudianteH" class="form-select">
+  
+              </select>
+            </div>
+  
+            <div class="col-md-12"><button type="button" class="btn btn-primary btn-block" onclick="cargarMtriculasReporte()">Ver horario</button></div>
+  <div class="row">
+            <div id="horariosR">
+  
+  
+            </div>
+           
+  
+  
+          </div>
+          
+            </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+
+</div>
+
+
+  <script src="js/estudiantes.js"></script>
+  <script src="js/docentes.js"></script>
+  <script src="js/matriculas.js"></script>
+  <script src="js/departamentos.js"></script>
+  <script src="js/asignaturas.js"></script>
+  <script src="js/cursos.js"></script>
+  <script src="js/periodos.js"></script>
+  <script src="js/salones.js"></script>
+  <script src="js/tarifas.js"></script>
+  <script src="js/programas.js"></script>
+  <script src="js/paginamain.js"></script>
+  <script src="js/reportes.js"></script>
+  <script src="js/horarioestudiantes.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+  
+</html>
